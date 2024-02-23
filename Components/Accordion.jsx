@@ -24,7 +24,7 @@ export default function Accordion() {
     console.log(storeMultipleIds)
 
     return (<div className="flex h-[100vh] w-100vw justify-center items-center flex-col gap-[20px]">
-        <button className="py-[10px] px-[20px] font-bold text-[20px] cursor-pointer border-2" onClick={() => setEnableMultiSelection(!enableMultiSelection)}>Enable Multi selection</button>
+        <button className="bg-white py-[10px] px-[20px] font-bold text-[20px] cursor-pointer border-2" onClick={() => setEnableMultiSelection(!enableMultiSelection)}>Enable Multi selection</button>
         <div className="w-[70%]">
         
         {data.length > 0 ? <div>{data.map(items =>
