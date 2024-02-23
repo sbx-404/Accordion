@@ -28,7 +28,7 @@ export default function Accordion() {
         <div className="w-[70%]">
         
         {data.length > 0 ? <div>{data.map(items =>
-            <div className="py-[10px] px-[20px] mb-[10px] bg-[#614101]">
+            <div className="py-[10px] px-[20px] mb-[10px] bg-zinc-600">
                 <div className="flex justify-between ">
                 <div className="flex justify-between items-center cursor-pointer text-[#ffffff]" onClick={enableMultiSelection ?
                     () => multiSelectionHandle(items.id)
