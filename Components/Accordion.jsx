@@ -39,12 +39,14 @@ export default function Accordion() {
                 ?(<div>{items.answer}</div>) 
             : <div>newwwwwwwwwwwwww</div>} */}
 
-            </div>    
+            </div>
+                <div  className="mt-[8px]">
                 {
                     enableMultiSelection ? 
                     storeMultipleIds.indexOf(items.id) !== -1 && (<div className="h-auto text-[#ffffff]">{items.answer}</div>) :
                     items.id === selection && (<div className="h-auto text-[#ffffff]">{items.answer}</div>)
                 }
+                </div>
             </div>
         )}</div>
             : <div>Data not found</div>
